@@ -1,0 +1,18 @@
+# dependências e build
+node_modules/
+dist/
+
+# configuração local (use o .env.example como modelo)
+.env
+
+# banco SQLite gerado por "npm run prisma:migrate" (a pasta prisma/migrations DEVE ir para o Git)
+*.db
+*.db-journal
+
+# logs gerados pelo Winston
+*.log
+
+# editor / sistema
+.vscode/
+.idea/
+.DS_Store

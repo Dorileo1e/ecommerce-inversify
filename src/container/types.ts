@@ -1,0 +1,15 @@
+/**
+ * Identificadores das dependências no container de IoC (um Symbol para cada uma).
+ * Symbol.for garante que o mesmo nome sempre aponta para o mesmo identificador.
+ */
+export const TYPES = {
+  PrismaClient: Symbol.for('PrismaClient'),
+  ProductRepository: Symbol.for('ProductRepository'),
+  OrderRepository: Symbol.for('OrderRepository'),
+  MailProvider: Symbol.for('MailProvider'),
+  PaymentMethod: Symbol.for('PaymentMethod'),
+  PaymentMethodRegistry: Symbol.for('PaymentMethodRegistry'),
+  NotificationService: Symbol.for('NotificationService'),
+  OrderService: Symbol.for('OrderService'),
+  OrderController: Symbol.for('OrderController'),
+} as const;
